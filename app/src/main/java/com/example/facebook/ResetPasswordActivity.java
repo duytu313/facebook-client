@@ -1,52 +1,56 @@
 package com.example.facebook;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class ResetPasswordActivity extends AppCompatActivity {
 
-    private EditText etNewPassword, etConfirmPassword;
-    private Button btnResetPassword, btnBackToLogin;
-
-    private String userIdentifier;
+    private EditText edtNewPassword, edtConfirmPassword;
+    private Button btnReset;
+    private DatabaseHelper db;
+    private String email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
 
-        Intent intent = getIntent();
-        userIdentifier = intent.getStringExtra("userIdentifier");
+        edtNewPassword = findViewById(R.id.edtNewPassword);
+        edtConfirmPassword = findViewById(R.id.edtConfirmPassword);
+        btnReset = findViewById(R.id.btnReset);
+        db = new DatabaseHelper(this);
 
-        etNewPassword = findViewById(R.id.etNewPassword);
-        etConfirmPassword = findViewById(R.id.etConfirmPassword);
-        btnResetPassword = findViewById(R.id.btnResetPassword);
-        btnBackToLogin = findViewById(R.id.btnBackToLogin);
-
-        btnResetPassword.setOnClickListener(v -> {
-            String newPass = etNewPassword.getText().toString().trim();
-            String confirmPass = etConfirmPassword.getText().toString().trim();
-
-            if (newPass.isEmpty() || confirmPass.isEmpty()) {
-                Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            if (!newPass.equals(confirmPass)) {
-                Toast.makeText(this, "Mật khẩu xác nhận không khớp", Toast.LENGTH_SHORT).show();
-                return;
-            }
-
-            Toast.makeText(this, "Mật khẩu của " + userIdentifier + " đã được đặt lại thành công!", Toast.LENGTH_LONG).show();
-
-            Intent backIntent = new Intent(ResetPasswordActivity.this, MainActivity.class);
-            startActivity(backIntent);
+        email = getIntent().getStringExtra("email");
+        if (email == null) {
+            Toast.makeText(this, "Không tìm thấy email", Toast.LENGTH_SHORT).show();
             finish();
+            return;
+        }
+
+        btnReset.setOnClickListener(v -> {
+            String p1 = edtNewPassword.getText().toString();
+            String p2 = edtConfirmPassword.getText().toString();
+            if (p1.isEmpty() || p2.isEmpty()) {
+                Toast.makeText(this, "Vui lòng nhập mật khẩu", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (!p1.equals(p2)) {
+                Toast.makeText(this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            boolean ok = db.updatePasswordByEmail(email, p1);
+            if (ok) {
+                Toast.makeText(this, "Đặt lại mật khẩu thành công", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(ResetPasswordActivity.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            } else {
+                Toast.makeText(this, "Cập nhật mật khẩu thất bại", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 }

@@ -3867,11 +3867,11 @@ id bounceStart
 id btnBackToLogin
 id btnComment
 id btnCreateAccount
-id btnFindAccount
 id btnLike
 id btnLogin
+id btnNext
 id btnRegister
-id btnResetPassword
+id btnReset
 id btnSend
 id btnShare
 id btn_back
@@ -3976,7 +3976,9 @@ id edge
 id editProfile
 id edit_query
 id edit_text_id
+id edtConfirmPassword
 id edtEmail
+id edtNewPassword
 id edtPassword
 id edtSearch
 id edtUsername
@@ -3989,10 +3991,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id entireSpace
 id escape
-id etConfirmPassword
 id etEmail
-id etEmailOrPhone
-id etNewPassword
 id etPassword
 id exitUntilCollapsed
 id expand_activities_button
@@ -4087,7 +4086,6 @@ id line3
 id linear
 id listMode
 id list_item
-id logo
 id m3_side_sheet
 id main
 id marquee
@@ -4394,7 +4392,6 @@ id triangle
 id tvAddFriend
 id tvAddFriend1
 id tvAddFriend2
-id tvDescription
 id tvExplore
 id tvFeed
 id tvFollow
@@ -4412,6 +4409,7 @@ id tvPrivacy
 id tvRemove1
 id tvRemove2
 id tvRemoveFriend
+id tvResetTitle
 id tvSaved
 id tvTitle
 id tvUsername

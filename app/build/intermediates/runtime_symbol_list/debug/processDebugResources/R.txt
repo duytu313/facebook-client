@@ -3866,11 +3866,11 @@ int id bounceStart 0x7f080071
 int id btnBackToLogin 0x7f080072
 int id btnComment 0x7f080073
 int id btnCreateAccount 0x7f080074
-int id btnFindAccount 0x7f080075
 int id btnLike 0x7f080076
 int id btnLogin 0x7f080077
+int id btnNext 0x7f0802bb
 int id btnRegister 0x7f080078
-int id btnResetPassword 0x7f080079
+int id btnReset 0x7f0802bc
 int id btnSend 0x7f0802b1
 int id btnShare 0x7f08007a
 int id btn_back 0x7f08007b
@@ -3975,7 +3975,9 @@ int id edge 0x7f0800d7
 int id editProfile 0x7f0800d8
 int id edit_query 0x7f0800d9
 int id edit_text_id 0x7f0800da
+int id edtConfirmPassword 0x7f0802bd
 int id edtEmail 0x7f0800db
+int id edtNewPassword 0x7f0802be
 int id edtPassword 0x7f0800dc
 int id edtSearch 0x7f0800dd
 int id edtUsername 0x7f0800de
@@ -3988,10 +3990,7 @@ int id enterAlways 0x7f0800e4
 int id enterAlwaysCollapsed 0x7f0800e5
 int id entireSpace 0x7f0800e6
 int id escape 0x7f0800e7
-int id etConfirmPassword 0x7f0800e8
 int id etEmail 0x7f0800e9
-int id etEmailOrPhone 0x7f0800ea
-int id etNewPassword 0x7f0800eb
 int id etPassword 0x7f0800ec
 int id exitUntilCollapsed 0x7f0800ed
 int id expand_activities_button 0x7f0800ee
@@ -4086,7 +4085,6 @@ int id line3 0x7f080145
 int id linear 0x7f080146
 int id listMode 0x7f080147
 int id list_item 0x7f080148
-int id logo 0x7f080149
 int id m3_side_sheet 0x7f08014a
 int id main 0x7f08014b
 int id marquee 0x7f08014c
@@ -4393,7 +4391,6 @@ int id triangle 0x7f080275
 int id tvAddFriend 0x7f080276
 int id tvAddFriend1 0x7f080277
 int id tvAddFriend2 0x7f080278
-int id tvDescription 0x7f080279
 int id tvExplore 0x7f08027a
 int id tvFeed 0x7f08027b
 int id tvFollow 0x7f08027c
@@ -4411,6 +4408,7 @@ int id tvPrivacy 0x7f080287
 int id tvRemove1 0x7f080288
 int id tvRemove2 0x7f080289
 int id tvRemoveFriend 0x7f08028a
+int id tvResetTitle 0x7f0802bf
 int id tvSaved 0x7f08028b
 int id tvTitle 0x7f08028c
 int id tvUsername 0x7f08028d

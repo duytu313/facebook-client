@@ -113,11 +113,11 @@ id bottomNavigation
 id btnBackToLogin
 id btnComment
 id btnCreateAccount
-id btnFindAccount
 id btnLike
 id btnLogin
+id btnNext
 id btnRegister
-id btnResetPassword
+id btnReset
 id btnSend
 id btnShare
 id btn_back
@@ -147,15 +147,14 @@ id createPostLayout
 id create_post
 id draftLayout
 id editProfile
+id edtConfirmPassword
 id edtEmail
+id edtNewPassword
 id edtPassword
 id edtSearch
 id edtUsername
 id effectLayout
-id etConfirmPassword
 id etEmail
-id etEmailOrPhone
-id etNewPassword
 id etPassword
 id faq1
 id faq2
@@ -187,7 +186,6 @@ id layoutNotif3
 id layoutNotif4
 id layoutNotifications
 id layoutPrivacy
-id logo
 id main
 id message
 id more
@@ -250,7 +248,6 @@ id title_post
 id tvAddFriend
 id tvAddFriend1
 id tvAddFriend2
-id tvDescription
 id tvExplore
 id tvFeed
 id tvFollow
@@ -268,6 +265,7 @@ id tvPrivacy
 id tvRemove1
 id tvRemove2
 id tvRemoveFriend
+id tvResetTitle
 id tvSaved
 id tvTitle
 id tvUsername
