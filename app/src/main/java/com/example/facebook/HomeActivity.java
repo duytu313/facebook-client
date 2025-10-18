@@ -101,10 +101,10 @@ public class HomeActivity extends AppCompatActivity {
 
     private void setupStories() {
         List<Story> stories = new ArrayList<>();
-        stories.add(new Story(R.drawable.img1, "Tạo tin", true));
-        stories.add(new Story(R.drawable.img2, "Nguyễn Văn A", false));
-        stories.add(new Story(R.drawable.img3, "Nguyễn Văn B", false));
-        stories.add(new Story(R.drawable.img6, "Nguyễn Văn C", false));
+        stories.add(new Story(R.drawable.img1, "Create story", true));
+        stories.add(new Story(R.drawable.img2, "Nguyen Van A", false));
+        stories.add(new Story(R.drawable.img3, "Nguyen Van B", false));
+        stories.add(new Story(R.drawable.img6, "Nguyen Van C", false));
 
         StoriesAdapter storiesAdapter = new StoriesAdapter(stories, this);
         LinearLayoutManager layoutManager =

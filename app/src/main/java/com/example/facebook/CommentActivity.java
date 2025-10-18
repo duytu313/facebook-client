@@ -30,13 +30,13 @@ public class CommentActivity extends AppCompatActivity {
             String text = commentInput.getText().toString().trim();
 
             if (text.isEmpty()) {
-                Toast.makeText(this, "Vui lòng nhập bình luận!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Enter your comment!", Toast.LENGTH_SHORT).show();
             } else {
 
-                Toast.makeText(this, "Đã comment: " + text, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "commented: " + text, Toast.LENGTH_SHORT).show();
 
 
-                addComment("Bạn", text);
+                addComment("You", text);
 
 
                 commentInput.setText("");

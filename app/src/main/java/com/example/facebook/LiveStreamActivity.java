@@ -37,7 +37,7 @@ public class LiveStreamActivity extends AppCompatActivity {
 
     private void startCameraPreview() {
 
-        Toast.makeText(this, "Đang mở camera...", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "opening camera...", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -48,7 +48,7 @@ public class LiveStreamActivity extends AppCompatActivity {
                 grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             startCameraPreview();
         } else {
-            Toast.makeText(this, "Cần quyền camera & micro để phát trực tiếp!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "allowing camera & micro to live stream!", Toast.LENGTH_LONG).show();
         }
     }
 }

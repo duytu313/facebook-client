@@ -26,7 +26,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
         email = getIntent().getStringExtra("email");
         if (email == null) {
-            Toast.makeText(this, "Không tìm thấy email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Email not found!", Toast.LENGTH_SHORT).show();
             finish();
             return;
         }
@@ -35,21 +35,21 @@ public class ResetPasswordActivity extends AppCompatActivity {
             String p1 = edtNewPassword.getText().toString();
             String p2 = edtConfirmPassword.getText().toString();
             if (p1.isEmpty() || p2.isEmpty()) {
-                Toast.makeText(this, "Vui lòng nhập mật khẩu", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter password", Toast.LENGTH_SHORT).show();
                 return;
             }
             if (!p1.equals(p2)) {
-                Toast.makeText(this, "Mật khẩu không khớp", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
                 return;
             }
             boolean ok = db.updatePasswordByEmail(email, p1);
             if (ok) {
-                Toast.makeText(this, "Đặt lại mật khẩu thành công", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Password reset successful", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(ResetPasswordActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             } else {
-                Toast.makeText(this, "Cập nhật mật khẩu thất bại", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Password update failed", Toast.LENGTH_SHORT).show();
             }
         });
     }

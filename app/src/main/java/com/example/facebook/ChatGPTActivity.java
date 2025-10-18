@@ -63,20 +63,20 @@ public class ChatGPTActivity extends AppCompatActivity {
                     String jsonResponse = response.body().string();
 
                     JSONObject obj = new JSONObject(jsonResponse);
-                    String reply = obj.optString("reply", "Không có phản hồi từ server");
+                    String reply = obj.optString("reply", "No response from server");
 
                     runOnUiThread(() -> outputText.setText(reply.trim()));
                 } else {
-                    runOnUiThread(() -> outputText.setText("Lỗi API: " + response.message()));
+                    runOnUiThread(() -> outputText.setText("error API: " + response.message()));
                 }
             }
 
         } catch (IOException e) {
             e.printStackTrace();
-            runOnUiThread(() -> outputText.setText("Lỗi kết nối: " + e.getMessage()));
+            runOnUiThread(() -> outputText.setText("Error connection: " + e.getMessage()));
         } catch (Exception e) {
             e.printStackTrace();
-            runOnUiThread(() -> outputText.setText("Lỗi xử lý: " + e.getMessage()));
+            runOnUiThread(() -> outputText.setText("Error procession: " + e.getMessage()));
         }
     }
 }

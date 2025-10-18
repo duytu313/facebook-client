@@ -24,7 +24,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cài đặt"
+                android:text="Settings"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginStart="12dp"
@@ -51,7 +51,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tài khoản"
+                android:text="Account"
                 android:textSize="18sp"
                 android:layout_marginStart="12dp"/>
         </LinearLayout>
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quyền riêng tư"
+                android:text="Privacy"
                 android:textSize="18sp"
                 android:layout_marginStart="12dp"/>
         </LinearLayout>
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Thông báo"
+                android:text="Notification"
                 android:textSize="18sp"
                 android:layout_marginStart="12dp"
                 android:layout_weight="1"/>
@@ -125,7 +125,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chung"
+                android:text="General settings"
                 android:textSize="18sp"
                 android:layout_marginStart="12dp"/>
         </LinearLayout>
@@ -146,7 +146,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hỗ trợ và Trợ giúp"
+                android:text="Help and support"
                 android:textSize="18sp"
                 android:layout_marginStart="12dp"/>
         </LinearLayout>
@@ -167,7 +167,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đăng xuất"
+                android:text="Logout"
                 android:textSize="18sp"
                 android:textColor="#E53935"
                 android:layout_marginStart="12dp"/>

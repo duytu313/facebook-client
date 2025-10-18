@@ -17,8 +17,8 @@ public class CreateStoryActivity extends AppCompatActivity {
 
         btnExit.setOnClickListener(v -> finish());
         btnCamera.setOnClickListener(v ->
-                Toast.makeText(this, "Mở camera", Toast.LENGTH_SHORT).show());
+                Toast.makeText(this, "Open camera", Toast.LENGTH_SHORT).show());
         btnUser.setOnClickListener(v ->
-                Toast.makeText(this, "Trang cá nhân", Toast.LENGTH_SHORT).show());
+                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show());
     }
 }

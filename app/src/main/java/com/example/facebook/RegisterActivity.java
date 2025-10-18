@@ -42,25 +42,25 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         if (username.isEmpty() || email.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, " Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, " Please enter complete information!", Toast.LENGTH_SHORT).show();
             return;
         }
 
 
         if (db.checkUsername(username)) {
-            Toast.makeText(this, " Tên người dùng đã tồn tại!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, " Username already exists!", Toast.LENGTH_SHORT).show();
             return;
         }
 
 
         boolean success = db.insertUser(username, email, password);
         if (success) {
-            Toast.makeText(this, " Đăng ký thành công!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, " Registration successful!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
         } else {
-            Toast.makeText(this, " Đăng ký thất bại, vui lòng thử lại!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, " Registration failed, please try again!", Toast.LENGTH_SHORT).show();
         }
     }
 }

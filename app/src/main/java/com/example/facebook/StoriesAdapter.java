@@ -49,7 +49,7 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.StoryVie
                 Intent intent = new Intent(context, StoryDetailActivity.class);
                 intent.putExtra("storyName", story.getName());
                 intent.putExtra("storyImage", story.getImageRes());
-                intent.putExtra("storyTime", "5 giờ");
+                intent.putExtra("storyTime", "5 hour");
                 context.startActivity(intent);
             });
         }

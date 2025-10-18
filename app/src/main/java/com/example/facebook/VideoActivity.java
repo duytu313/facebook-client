@@ -39,7 +39,7 @@ public class VideoActivity extends AppCompatActivity {
         tvPostContent = findViewById(R.id.tvPostContent);
 
         tvPostUsername.setText("Nguyen Van A");
-        tvPostContent.setText("Đây là nội dung video...");
+        tvPostContent.setText("This is the video contentThis is the video content...");
 
         btnLike.setOnClickListener(v -> Toast.makeText(VideoActivity.this, "Liked!", Toast.LENGTH_SHORT).show());
         btnComment.setOnClickListener(v -> Toast.makeText(VideoActivity.this, "Comment clicked!", Toast.LENGTH_SHORT).show());

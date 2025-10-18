@@ -28,12 +28,12 @@ public class PrivacyActivity extends AppCompatActivity {
 
 
         privacy1.setOnClickListener(v ->
-                Toast.makeText(PrivacyActivity.this, "Chỉnh sửa quyền xem bài viết", Toast.LENGTH_SHORT).show());
+                Toast.makeText(PrivacyActivity.this, "Edit post viewing permissions", Toast.LENGTH_SHORT).show());
 
         privacy2.setOnClickListener(v ->
-                Toast.makeText(PrivacyActivity.this, "Chỉnh sửa quyền xem thông tin cá nhân", Toast.LENGTH_SHORT).show());
+                Toast.makeText(PrivacyActivity.this, "Edit personal information viewing permissions", Toast.LENGTH_SHORT).show());
 
         privacy3.setOnClickListener(v ->
-                Toast.makeText(PrivacyActivity.this, "Chỉnh sửa quyền tìm kiếm và kết nối", Toast.LENGTH_SHORT).show());
+                Toast.makeText(PrivacyActivity.this, "Edit search and connection permissions", Toast.LENGTH_SHORT).show());
     }
 }

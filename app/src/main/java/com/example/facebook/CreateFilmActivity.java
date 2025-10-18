@@ -44,26 +44,26 @@ public class CreateFilmActivity extends AppCompatActivity {
         btnExit.setOnClickListener(v -> finish());
 
         imgSetting.setOnClickListener(v ->
-                Toast.makeText(this, "Mở cài đặt thước phim", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "open reel settings", Toast.LENGTH_SHORT).show()
         );
         cameraLayout.setOnClickListener(v -> openCamera());
         musicLayout.setOnClickListener(v ->
-                Toast.makeText(this, "Mở thư viện nhạc", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "open music library", Toast.LENGTH_SHORT).show()
         );
         sampleLayout.setOnClickListener(v ->
-                Toast.makeText(this, "Chọn mẫu thước phim", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "select reel sample", Toast.LENGTH_SHORT).show()
         );
         savedLayout.setOnClickListener(v ->
-                Toast.makeText(this, "Mở danh sách thước phim đã lưu", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "open saved reel list", Toast.LENGTH_SHORT).show()
         );
         draftLayout.setOnClickListener(v ->
-                Toast.makeText(this, "Mở bản nháp thước phim", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "open reel draft", Toast.LENGTH_SHORT).show()
         );
         effectLayout.setOnClickListener(v ->
-                Toast.makeText(this, "Chọn hiệu ứng quay phim", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "select reeling effects", Toast.LENGTH_SHORT).show()
         );
         greenScreenLayout.setOnClickListener(v ->
-                Toast.makeText(this, "Bật chế độ phông xanh", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "turn on green mode", Toast.LENGTH_SHORT).show()
         );
         checkPermissions();
     }
@@ -83,7 +83,7 @@ public class CreateFilmActivity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, REQUEST_VIDEO_CAPTURE);
         } else {
-            Toast.makeText(this, "Không thể mở camera", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "cannot open camera", Toast.LENGTH_SHORT).show();
         }
     }
     @Override
@@ -92,10 +92,10 @@ public class CreateFilmActivity extends AppCompatActivity {
 
         if (requestCode == REQUEST_VIDEO_CAPTURE && resultCode == RESULT_OK && data != null) {
             Uri videoUri = data.getData();
-            Toast.makeText(this, "Đã quay xong video: " + videoUri, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "finished filming the video: " + videoUri, Toast.LENGTH_SHORT).show();
         } else if (requestCode == REQUEST_PICK_VIDEO && resultCode == RESULT_OK && data != null) {
             Uri selectedVideoUri = data.getData();
-            Toast.makeText(this, "Đã chọn video: " + selectedVideoUri, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "selected video: " + selectedVideoUri, Toast.LENGTH_SHORT).show();
         }
     }
 }

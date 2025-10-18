@@ -25,10 +25,10 @@ public class SavedPostsActivity extends AppCompatActivity {
 
         imgBack.setOnClickListener(v -> finish());
         post1.setOnClickListener(v ->
-                Toast.makeText(SavedPostsActivity.this, "Đã mở bài viết 1", Toast.LENGTH_SHORT).show());
+                Toast.makeText(SavedPostsActivity.this, "Opened post 1", Toast.LENGTH_SHORT).show());
         post2.setOnClickListener(v ->
-                Toast.makeText(SavedPostsActivity.this, "Đã mở bài viết 2", Toast.LENGTH_SHORT).show());
+                Toast.makeText(SavedPostsActivity.this, "Opened post 2", Toast.LENGTH_SHORT).show());
         post3.setOnClickListener(v ->
-                Toast.makeText(SavedPostsActivity.this, "Đã mở bài viết 3", Toast.LENGTH_SHORT).show());
+                Toast.makeText(SavedPostsActivity.this, "Opened post 3", Toast.LENGTH_SHORT).show());
     }
 }

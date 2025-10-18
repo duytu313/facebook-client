@@ -25,12 +25,12 @@ public class HelpActivity extends AppCompatActivity {
         imgBack.setOnClickListener(v -> finish());
 
         faq1.setOnClickListener(v ->
-                Toast.makeText(HelpActivity.this, "Trả lời FAQ 1", Toast.LENGTH_SHORT).show());
+                Toast.makeText(HelpActivity.this, "answer FAQ 1", Toast.LENGTH_SHORT).show());
 
         faq2.setOnClickListener(v ->
-                Toast.makeText(HelpActivity.this, "Trả lời FAQ 2", Toast.LENGTH_SHORT).show());
+                Toast.makeText(HelpActivity.this, "answer FAQ 2", Toast.LENGTH_SHORT).show());
 
         faq3.setOnClickListener(v ->
-                Toast.makeText(HelpActivity.this, "Trả lời FAQ 3", Toast.LENGTH_SHORT).show());
+                Toast.makeText(HelpActivity.this, "answer FAQ 3", Toast.LENGTH_SHORT).show());
     }
 }

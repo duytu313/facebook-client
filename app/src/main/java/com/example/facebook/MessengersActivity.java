@@ -70,6 +70,6 @@ public class MessengersActivity extends AppCompatActivity {
     }
 
     private void openProfile(String name) {
-        Toast.makeText(this, "Mở trang cá nhân của " + name, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Open profile of " + name, Toast.LENGTH_SHORT).show();
     }
 }

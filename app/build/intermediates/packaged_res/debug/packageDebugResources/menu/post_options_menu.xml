@@ -3,23 +3,23 @@
     <item
         android:id="@+id/action_post"
         android:icon="@drawable/edit"
-        android:title="Bài viết" />
+        android:title="Post" />
     <item
         android:id="@+id/action_news"
         android:icon="@drawable/news"
-        android:title="Tin" />
+        android:title="Story" />
     <item
         android:id="@+id/action_film"
         android:icon="@drawable/video"
-        android:title="Thước phim" />
+        android:title="Reels" />
     <item
         android:id="@+id/action_live"
         android:icon="@drawable/play"
-        android:title="Phát trực tiếp" />
+        android:title="Livestream" />
     <item
         android:id="@+id/action_note"
         android:icon="@drawable/notes"
-        android:title="Ghi chú" />
+        android:title="Note" />
     <item
         android:id="@+id/action_ai"
         android:icon="@drawable/ai"

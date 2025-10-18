@@ -23,10 +23,10 @@ public class NotificationsActivity extends AppCompatActivity {
         imgOption2 = findViewById(R.id.imgOption2);
 
         imgOption1.setOnClickListener(v ->
-                Toast.makeText(NotificationsActivity.this, "Tùy chọn thông báo", Toast.LENGTH_SHORT).show());
+                Toast.makeText(NotificationsActivity.this, "Optional notifications", Toast.LENGTH_SHORT).show());
 
         imgOption2.setOnClickListener(v ->
-                Toast.makeText(NotificationsActivity.this, "Tìm kiếm thông báo", Toast.LENGTH_SHORT).show());
+                Toast.makeText(NotificationsActivity.this, "Search notification", Toast.LENGTH_SHORT).show());
 
         layoutNotif1 = findViewById(R.id.layoutNotif1);
         layoutNotif2 = findViewById(R.id.layoutNotif2);
@@ -34,15 +34,15 @@ public class NotificationsActivity extends AppCompatActivity {
         layoutNotif4 = findViewById(R.id.layoutNotif4);
 
         layoutNotif1.setOnClickListener(v ->
-                Toast.makeText(NotificationsActivity.this, "Mở thông báo: Nguyen thi thuy", Toast.LENGTH_SHORT).show());
+                Toast.makeText(NotificationsActivity.this, "Open notification: Nguyen thi thuy", Toast.LENGTH_SHORT).show());
 
         layoutNotif2.setOnClickListener(v ->
-                Toast.makeText(NotificationsActivity.this, "Mở thông báo: Nguyen van anh", Toast.LENGTH_SHORT).show());
+                Toast.makeText(NotificationsActivity.this, "Open notification: Nguyen van anh", Toast.LENGTH_SHORT).show());
 
         layoutNotif3.setOnClickListener(v ->
-                Toast.makeText(NotificationsActivity.this, "Mở thông báo: giang a pao", Toast.LENGTH_SHORT).show());
+                Toast.makeText(NotificationsActivity.this, "Open notification: giang a pao", Toast.LENGTH_SHORT).show());
 
         layoutNotif4.setOnClickListener(v ->
-                Toast.makeText(NotificationsActivity.this, "Mở thông báo: giang a su", Toast.LENGTH_SHORT).show());
+                Toast.makeText(NotificationsActivity.this, "Open notification: giang a su", Toast.LENGTH_SHORT).show());
     }
 }

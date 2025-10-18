@@ -25,17 +25,17 @@ public class FriendsActivity extends AppCompatActivity {
 
 
         tvAddFriend.setOnClickListener(v -> {
-            Toast.makeText(FriendsActivity.this, "Đã gửi lời mời kết bạn", Toast.LENGTH_SHORT).show();
+            Toast.makeText(FriendsActivity.this, "sent", Toast.LENGTH_SHORT).show();
         });
 
 
         tvRemoveFriend.setOnClickListener(v -> {
-            Toast.makeText(FriendsActivity.this, "Đã gỡ bạn bè", Toast.LENGTH_SHORT).show();
+            Toast.makeText(FriendsActivity.this, "removed", Toast.LENGTH_SHORT).show();
         });
 
 
         imgSearch.setOnClickListener(v -> {
-            Toast.makeText(FriendsActivity.this, "Mở chức năng tìm kiếm bạn bè", Toast.LENGTH_SHORT).show();
+            Toast.makeText(FriendsActivity.this, "Open friend search", Toast.LENGTH_SHORT).show();
         });
     }
 }

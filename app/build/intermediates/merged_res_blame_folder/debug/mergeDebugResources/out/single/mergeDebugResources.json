@@ -52,6 +52,10 @@
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_friends.xml"
     },
     {
+        "merged": "com.example.facebook.app-debug-35:/layout_activity_settings.xml.flat",
+        "source": "com.example.facebook.app-main-37:/layout/activity_settings.xml"
+    },
+    {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_reset_password.xml.flat",
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_reset_password.xml"
     },
@@ -204,10 +208,6 @@
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_story_detail.xml"
     },
     {
-        "merged": "com.example.facebook.app-debug-35:/layout_activity_reset_password.xml.flat",
-        "source": "com.example.facebook.app-main-37:/layout/activity_reset_password.xml"
-    },
-    {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_story.xml.flat",
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\layout\\activity_story.xml"
     },
@@ -256,6 +256,10 @@
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\img5.jpg"
     },
     {
+        "merged": "com.example.facebook.app-debug-35:/layout_activity_search.xml.flat",
+        "source": "com.example.facebook.app-main-37:/layout/activity_search.xml"
+    },
+    {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_recycle.png.flat",
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\recycle.png"
     },
@@ -274,10 +278,6 @@
     {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_reel.png.flat",
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\reel.png"
-    },
-    {
-        "merged": "com.example.facebook.app-debug-35:/layout_item_comment.xml.flat",
-        "source": "com.example.facebook.app-main-37:/layout/item_comment.xml"
     },
     {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\layout_activity_reels.xml.flat",
@@ -322,10 +322,6 @@
     {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_play.png.flat",
         "source": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-main-37:\\drawable\\play.png"
-    },
-    {
-        "merged": "com.example.facebook.app-debug-35:/layout_activity_forgot_password.xml.flat",
-        "source": "com.example.facebook.app-main-37:/layout/activity_forgot_password.xml"
     },
     {
         "merged": "C:\\Users\\tudo9\\.gradle\\daemon\\8.13\\com.example.facebook.app-debug-35:\\drawable_instagram.png.flat",

@@ -28,12 +28,12 @@ public class SettingsActivity extends AppCompatActivity {
 
 
         layoutAccount.setOnClickListener(v ->
-                Toast.makeText(SettingsActivity.this, "Mở cài đặt tài khoản", Toast.LENGTH_SHORT).show());
+                Toast.makeText(SettingsActivity.this, "Open account settings", Toast.LENGTH_SHORT).show());
 
         layoutPrivacy.setOnClickListener(v ->
-                Toast.makeText(SettingsActivity.this, "Mở cài đặt quyền riêng tư", Toast.LENGTH_SHORT).show());
+                Toast.makeText(SettingsActivity.this, "Open privacy settings", Toast.LENGTH_SHORT).show());
 
         layoutNotifications.setOnClickListener(v ->
-                Toast.makeText(SettingsActivity.this, "Mở cài đặt thông báo", Toast.LENGTH_SHORT).show());
+                Toast.makeText(SettingsActivity.this, "Open notification settings", Toast.LENGTH_SHORT).show());
     }
 }

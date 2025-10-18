@@ -31,17 +31,15 @@ public class CreatePostActivity extends AppCompatActivity {
         Button btnPost = findViewById(R.id.btn_post);
         ImageView btnBack = findViewById(R.id.btn_back);
 
-
         btnPhoto.setOnClickListener(v -> openImagePicker());
-
 
         btnPost.setOnClickListener(v -> {
             String content = postContent.getText().toString().trim();
             if (content.isEmpty() && imageUri == null) {
-                Toast.makeText(this, "Hãy viết gì đó hoặc chọn ảnh!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please write something or select an image!", Toast.LENGTH_SHORT).show();
                 return;
             }
-            Toast.makeText(this, "Đăng bài thành công", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Post uploaded successfully", Toast.LENGTH_SHORT).show();
             finish();
         });
 

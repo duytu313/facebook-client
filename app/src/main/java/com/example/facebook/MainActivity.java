@@ -40,18 +40,18 @@ public class MainActivity extends AppCompatActivity {
                 String password = etPassword.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
-                    Toast.makeText(MainActivity.this, "Vui lòng nhập đầy đủ thông tin!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please enter complete information!", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 boolean success = db.checkUserByEmail(email, password);
                 if (success) {
-                    Toast.makeText(MainActivity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
-                    Toast.makeText(MainActivity.this, "Email hoặc mật khẩu không đúng!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, " Wrong email or password!", Toast.LENGTH_SHORT).show();
                 }
             }
         });

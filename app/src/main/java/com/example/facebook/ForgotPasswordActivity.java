@@ -19,7 +19,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         btnNext.setOnClickListener(v -> {
             String email = edtEmail.getText().toString().trim();
             if (email.isEmpty()) {
-                Toast.makeText(this, "Vui lòng nhập email", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Enter the email", Toast.LENGTH_SHORT).show();
                 return;
             }
             boolean exists = db.checkUserByEmailExist(email);
@@ -29,7 +29,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             } else {
-                Toast.makeText(this, "Email không tồn tại", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Email not exist", Toast.LENGTH_SHORT).show();
             }
         });
     }

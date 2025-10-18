@@ -1,4 +1,4 @@
-package com.example.facebook; // ⚠️ Đổi thành package của bạn
+package com.example.facebook; // ⚠️ Change to your package name
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -22,7 +22,6 @@ public class CreateNoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_note);
 
-
         btnBack = findViewById(R.id.btn_back);
         btnSave = findViewById(R.id.btn_save);
         textName = findViewById(R.id.textName);
@@ -33,14 +32,12 @@ public class CreateNoteActivity extends AppCompatActivity {
 
         btnBack.setOnClickListener(v -> finish());
 
-
         textName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
                 textCount.setText(s.length() + "/60");
             }
 
@@ -48,21 +45,22 @@ public class CreateNoteActivity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {}
         });
 
-
         btnSave.setOnClickListener(v -> {
             String content = textName.getText().toString().trim();
             if (content.isEmpty()) {
-                Toast.makeText(this, "Vui lòng nhập nội dung ghi chú!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter a note!", Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(this, "Đã chia sẻ ghi chú!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Note shared successfully!", Toast.LENGTH_SHORT).show();
                 finish();
             }
         });
+
         btnMusic.setOnClickListener(v ->
-                Toast.makeText(this, "Chức năng thêm nhạc sẽ có sau!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Add music feature coming soon!", Toast.LENGTH_SHORT).show()
         );
+
         btnSmile.setOnClickListener(v ->
-                Toast.makeText(this, "Chức năng thêm cảm xúc sắp có!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Emoticon feature coming soon!", Toast.LENGTH_SHORT).show()
         );
     }
 }

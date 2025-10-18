@@ -44,28 +44,28 @@ public class SearchActivity extends AppCompatActivity {
         tvAddFriend1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SearchActivity.this, "Đã gửi lời mời tới tuan tran", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SearchActivity.this, "Invitation sent to tuan tran", Toast.LENGTH_SHORT).show();
             }
         });
 
         tvRemove1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SearchActivity.this, "Đã gỡ tuan tran khỏi gợi ý", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SearchActivity.this, "Removed tuan tran from suggestion", Toast.LENGTH_SHORT).show();
             }
         });
 
         tvAddFriend2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SearchActivity.this, "Đã gửi lời mời tới nhung tran", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SearchActivity.this, "Invitation sent to nhung tran", Toast.LENGTH_SHORT).show();
             }
         });
 
         tvRemove2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(SearchActivity.this, "Đã gỡ nhung tran khỏi gợi ý", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SearchActivity.this, "Removed the velvet from the suggestion", Toast.LENGTH_SHORT).show();
             }
         });
 

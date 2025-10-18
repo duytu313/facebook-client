@@ -29,22 +29,22 @@ public class ProfileActivity extends AppCompatActivity {
 
 
         profilePic.setOnClickListener(v ->
-                Toast.makeText(ProfileActivity.this, "Đây là hình đại diện của bạn", Toast.LENGTH_SHORT).show()
+                Toast.makeText(ProfileActivity.this, "This is your avatar", Toast.LENGTH_SHORT).show()
         );
 
         coverPhoto.setOnClickListener(v ->
-                Toast.makeText(ProfileActivity.this, "Đây là ảnh bìa của bạn", Toast.LENGTH_SHORT).show()
+                Toast.makeText(ProfileActivity.this, "This is the cover photo", Toast.LENGTH_SHORT).show()
         );
 
         addToStory.setOnClickListener(v ->
-                Toast.makeText(ProfileActivity.this, "Thêm vào tin của bạn", Toast.LENGTH_SHORT).show()
+                Toast.makeText(ProfileActivity.this, "Add to your news", Toast.LENGTH_SHORT).show()
         );
 
         editProfile.setOnClickListener(v ->
-                Toast.makeText(ProfileActivity.this, "Chỉnh sửa trang cá nhân", Toast.LENGTH_SHORT).show()
+                Toast.makeText(ProfileActivity.this, "Edit personal page", Toast.LENGTH_SHORT).show()
         );
 
         userName.setText("Nguyen Van A");
-        followers.setText("1.3K người theo dõi");
+        followers.setText("1.3K followers");
     }
 }
